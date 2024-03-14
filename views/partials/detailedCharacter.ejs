@@ -1,0 +1,14 @@
+   <% if (locals.character) { %>
+        <div class="character">
+            <p class="center-img"><img class="imgLarge" src="/<%= character.image %>" alt="<%= character.name %>" /></p>
+            <p><%= character.description %></p>
+            <p><span><b>Name:</b> </span><%= character.name %></p>
+            <p><span><b>Role:</b> </span><%= character.role %></p>
+            <p><span><b>Skill:</b> </span><%= character.skill %></p>
+            <p><span><b>Origin:</b> </span><%= character.origin %></p>
+            <p><span><b>Alias:</b> </span><%= character.alias %></p>
+            <p><span><b>Bounty:</b> </span><%= character.bounty %></p>
+        </div>
+   <% }  %>
+    
+

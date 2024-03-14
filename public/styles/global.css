@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'onepiece';
+    src: url('../fonts/one-piece-font.ttf') format('truetype');
+  }
+
+body {
+    font-family: 'onepiece';
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 24px;
+    /* background-image: url("../img/op-logo.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100px;
+    background-color: cornflowerblue;
+}
+
+nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: blanchedalmond;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.home-section {
+    flex-grow: 1;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.characters-content {
+    flex-grow: 1;
+    flex-wrap: 1;
+    align-items: center;
+}
+
+.bg-img {
+    background-image: url("../img/one-piece.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.imgSmall {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+}
+
+.imgLarge {
+    width: auto;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center-img {
+    text-align: center;
+}
+
+.character {
+    background-color: #a3b18a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    margin: 16px;
+    width: 25rem;
+}
+
+.character p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    border-radius: 999px;
+    color: #353434;
+    cursor: pointer;
+    font-family: 'onepiece';
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 18px;
+    width: fit-content;
+    border: 0;
+}
+
+footer {
+    background-color: #588157;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 820px) {
+    .characters-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character {
+        width: 21rem;
+    }
+}
